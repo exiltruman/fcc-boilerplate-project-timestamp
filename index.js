@@ -25,7 +25,7 @@ app.get('/api/hello', function(req, res) {
 
 // listen for requests :)
 const listener = app.listen(3001, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
+  console.log('Your app is listening on port ' + listener.address().port + ' ' + listener.address().address);
 });
 
 app.get('/api/:date?', (req,res) => {
